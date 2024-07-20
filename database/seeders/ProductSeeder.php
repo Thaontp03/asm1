@@ -16,7 +16,7 @@ class ProductSeeder extends Seeder
         for($i=0;$i<50;$i++){
             DB::table('products')->insert([
                 'title' => fake() -> text(25),
-                'thumbnail' => fake() -> imageUrl(),
+                'thumbnail' => 'https://media.loveitopcdn.com/2534/my-pham-han-quoc-da-nang6.jpeg',
                 'description' => fake() -> text(50),
                 'price' => rand(10,100),
                 'quantity' => rand(100,10000),
